@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML</title>
+    <style>
+        body{
+            padding: 2%;
+        }
+        br{
+            padding: 0.5%;
+        }
+    </style>
+</head>
+<body>
+        <!-- Headings from 1 to 6 -->
+        <h1>Hello World</h1>
+        <h2>Hello World</h2>
+        <h3>Hello World</h3>
+        <h4>Hello World</h4>
+        <h5>Hello World</h5>
+        <h6>Hello World</h6>
+
+        <!-- Paragraph tag -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat velit illo rerum ducimus eligendi, ullam quidem modi repudiandae quae consequuntur deleniti nulla? Quia natus ut at, omnis eveniet quod dolore.</p>
+
+        <!-- bold -->
+        <b>hello</b>
+
+        <!-- italic -->
+        <i>hello</i>
+
+        <!-- underline -->
+        <u>hello</u>
+
+        <!-- strong is also a bold but it is used for search engine optimization -->
+        <strong>hello</strong>
+
+        <!-- emphasize text and display in italics -->
+        <em>hello</em>
+
+        <!-- displayed with a strikethrough -->
+        <del>hello</del>
+
+        <!-- used to highlight or mark text -->
+        <mark>hello</mark>
+
+        <!-- break line -->
+        <br>
+
+        <!-- superscript -->
+        X<sup>2</sup>
+
+        <!-- subscript -->
+        H<sub>2</sub>
+
+        <br>
+
+        <!-- ordered list -->
+        <ol>
+            <!-- list elements -->
+            <li>mango</li>
+            <li>banana</li>
+            <li>orange</li>
+        </ol>
+
+        <!-- unordered list -->
+        <ul>
+            <!-- list elements -->
+            <li>potato</li>
+            <li>spinach</li>
+            <li>brocoli</li>
+            <li>tomato</li>
+            <li>ladyfinger</li>
+        </ul>
+
+        <!-- description list -->
+        <dl>
+            <!-- definition term -->
+            <dt>fruits</dt>
+            <!-- definition description -->
+            <dd>mango</dd>
+            <dd>kiwi</dd>
+            <dd>veggies</dd>
+            <dd>pea</dd>
+            <dd>potato</dd>
+        </dl>
+
+        <br>
+
+        <!-- table tag with border attribute -->
+        <table border="1px solid" >
+            <!-- table row -->
+            <tr>
+                <!-- header cells -->
+                <th>Qualification</th>
+                <th>Year</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <!-- data cells -->
+                <td>10th</td>
+                <td>20XX</td>
+                <td>XX%</td>
+            </tr>
+            <tr>
+                <td>12th</td>
+                <td>20XX</td>
+                <td>XX%</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>20XX</td>
+                <td>XX%</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- used to group media content -->
+        <figure>
+            <!-- used to embed image -->
+            <img src="img.jpg" alt="picture" height="200px">
+            <!-- used to provide caption to the figure element -->
+            <figcaption>Image of Flower in a Bowl.</figcaption>
+        </figure>
+
+        <!-- Anchor Tag used for creating hyperlinks -->
+        <a href="https://code.visualstudio.com/Download">google</a> <br>
+        <a href="/page2.html">page2</a> 
+
+        <br>
+
+        <!-- Form tag used to obtain a JSON in the form of key value pair where keys are names of the input -->
+        <form action="submit">
+            <!-- It improves user experience by making the form more accessible. When a user clicks on a <label>, the corresponding input field is focused -->
+            <label for="name1">Student name</label> <br>
+            <!-- Input tag used to show a input box and take a specific input based on the type attribute -->
+            <input type="text" id="name1" name="name1" placeholder="Name1"> <br>
+
+            <label for="age">Age</label> <br>
+            <input type="number" id="age" name="age" placeholder="Age"> <br>
+
+            <label for="email1">Email</label> <br>
+            <input type="email" id="email1" name="email1" placeholder="Email1"> <br>
+
+            <label for="remarks">Remarks</label> <br>
+            <!-- This is the text area and its attributes -->
+            <textarea name="remarks" id="remarks" rows="3" cols="20" placeholder="Remarks"></textarea> <br>
+
+            <label for="cars">Cars</label> <br>
+            <!-- This is a select and optons tag for showing a drop down -->
+            <select name="cars" id="cars">
+                <option value="null" selected>Select Option</option> <!-- This option will appear by default-->
+                <option value="volvo" disabled>Volvo</option>. <!-- This option is disabled -->
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select> <br>
+
+            <label for="gender">Gender:</label>
+            <!-- This is the radio button to select from the given options -->
+            <input type="radio" name="gender" id="male" value="male">Male</input>  <!-- We can close the input area -->
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female </label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+
+            <br>
+
+            <!-- CheckBox  -->
+            <input type="checkbox" id="vehicle1" name="vehicle1">
+            <label for="vehicle1">I have a bike</label> <br>
+            <input type="checkbox" id="vehicle2" name="vehicle2">
+            <label for="vehicle2">I have a car</label> <br>
+            <input type="checkbox" id="vehicle3" name="vehicle3">
+            <label for="vehicle3">I have a boat</label> <br>
+        </form>
+
+        <!-- Today's Assignment -->
+        <section>
+            <center><h1><b>Contact Us</b></h1></center>
+            <center>
+                <form action="">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Name"> <br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Email"> <br>
+                    <label for="mobileno">Mobile No.: </label>
+                    <input type="text" id="mobileno" name="mobileno" placeholder="Mobile No."> <br>
+                    <label for="description">Description: </label>
+                    <textarea name="description" id="description" placeholder="Description" rows="4"></textarea> <br>
+                </form>
+            </center>
+        </section>
+
+        <br>
+
+        <!-- Video tag -->
+        <video src="sample.mkv" controls height="300px"></video>
+
+        <br>
+
+        <video controls height="300px">
+            <source src="sample.mkv" type="video/mp4">
+        </video>
+
+        <br>
+
+        <!-- Youtube embeding -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9P5HtoEBWrY?si=dAhURdKxVWnOABNJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <br>
+
+        <!-- Audio tag -->
+        <audio src="/sample.mp3" controls autoplay loop></audio>
+
+        <br>
+
+        <audio controls>
+            <source src="/sample.mp3" type="audio/mp3">
+        </audio>
+
+        <br>
+
+        <!-- SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+            <!-- Background circle -->
+            <circle cx="100" cy="100" r="100" fill="#FFCC4D" />
+            
+            <!-- Left eye -->
+            <circle cx="60" cy="80" r="15" fill="#000" />
+            
+            <!-- Right eye -->
+            <circle cx="140" cy="80" r="15" fill="#000" />
+            
+            <!-- Mouth -->
+            <path d="M50 120 Q100 180 150 120" stroke="#000" stroke-width="10" fill="none" />
+        </svg>
+</body>
+</html>
