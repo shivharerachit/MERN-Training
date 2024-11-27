@@ -12,7 +12,7 @@ I have created my portfolio using HTML and CSS and hosted it on GitHub on the 3r
 
 ## Hosting
 
-The portfolio is hosted on GitHub Pages. You can view it [here](https://shivharerachit.github.io/MERN-Training/Day-3).
+The portfolio is hosted on GitHub Pages. You can view it [here](https://shivharerachit.github.io/MERN-Training/).
 
 ## Training
 
