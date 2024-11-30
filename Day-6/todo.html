@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <button onclick="myFun()">START</button>
+    <script>
+        function myFun(){
+            var Todo = [];
+
+            while(true){
+                var choice = prompt("Choose 1 to add and 2 to read.");
+                if(choice==1){
+                    var task = prompt("Enter task.");
+                    Todo.push(task);
+                }else if(choice == 2){
+                    console.log(Todo);
+                }else if(choice == 3){
+                    var index = prompt("Enter index.")
+                    Todo.splice(index,1);
+                }else{
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

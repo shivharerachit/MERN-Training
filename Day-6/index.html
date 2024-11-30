@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            Name: "Rahul",
+            Age: 25
+        }
+        for(var y in obj){
+            console.log(y+": "+obj[y]);
+        }
+        for(var i = 0 ; i < 10 ; i++){
+            console.log(i);
+        }
+        var n = 5;
+
+        // Pattern
+        
+        //     *
+        //    ***
+        //   *****
+        //  *******
+        // *********
+        for(var i = n; i>=0 ; i--){
+            console.log(" ".repeat(i) + "*".repeat(2*(n-i)+1))
+        }
+        console.log("")
+
+        // *********
+        //  *******
+        //   *****
+        //    ***
+        //     *
+        for(var i = 0; i<=n ; i++){
+            console.log(" ".repeat(i)+"*".repeat(2*(n-i)+1));
+        }
+        console.log("")
+
+        //     *
+        //    ***
+        //   *****
+        //  *******
+        // *********
+        //  *******
+        //   *****
+        //    ***
+        //     *
+        for(var i = n; i>0 ; i--){
+            console.log(" ".repeat(i) + "*".repeat(2*(n-i)+1))
+        }
+        for(var i = 0; i<=n ; i++){
+            console.log(" ".repeat(i)+"*".repeat(2*(n-i)+1));
+        }
+        console.log("")
+
+        // Fibonacci
+        var f=0;
+        var s=1;
+        for(var i = 1 ; i<n ; i++){
+            var temp = s;
+            s=s+f;
+            f=temp;
+        }
+        console.log(s)
+        console.log("")
+
+        // CheckPrime
+
+
+        // Check Armstrong
+
+        // First N prime no.
+
+
+
+        // Array
+        var arr = new Array()
+        var arr2 = new Array("aa", "dd")
+        var arr3 = [3, 5, "aa", 6]
+
+        console.log(arr3)
+        console.log("")
+
+        for(var x in arr3){
+            console.log(x)
+        } 
+        console.log("")
+
+        for(var x of arr3){
+            console.log(x)
+        } 
+        console.log("")
+
+        for(var i = 0 ; i<arr3.length ; i++){
+            console.log(arr3[i])
+        }
+        console.log("")
+
+        arr3.push(3)
+
+        console.log(arr3)
+        
+        console.log(arr3.concat(arr2))
+
+        console.log(arr3.reverse())
+        
+        console.log(arr3.slice(2,4))
+
+        console.log(arr3.splice(2,1))
+
+        console.log(arr3.splice(2,0,"aa"))
+
+        console.log(arr3.splice(1,0,"aa",6))
+        console.log(arr3)
+
+        console.log("")
+
+        
+        aka = 98;
+        console.log(aka)
+        abc = 69;
+        _abc = 90;
+        $abc = 43;
+        console.log(abc)
+        console.log(_abc)
+        console.log($abc)
+        // Naming Convention for a var
+        // Must start with a letter, underscore or a dollar sign
+        var abc=4;
+        var _abc=4;
+        var $abc=4;
+        console.log(abc)
+        console.log(_abc)
+        console.log($abc)
+        let aka;
+    </script>
+</body>
+</html>
