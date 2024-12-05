@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" style="color: red;"></span>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <span id="ageError" style="color: red;"></span>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" style="color: red;"></span>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        document.getElementById('myForm')
+        .addEventListener('submit', function(event) {
+    // Prevent form submission
+    event.preventDefault();
+        let a = document.getElementById('name')
+        alert("")
+        console.log(a.value);})
+    </script>
+</body>
+</html>

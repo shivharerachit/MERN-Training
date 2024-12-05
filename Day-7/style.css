@@ -1,0 +1,57 @@
+body{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+#Container{
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(103, 66, 66);
+}
+#Container2{
+    display: flex;
+    gap: 30px;
+}
+.ibox{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(137, 193, 174);
+    width: 400px;
+    padding: 20px;
+}
+.cards{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+#card1{
+    background-color: aqua;
+    padding: 7px;
+    box-shadow: 2px 2px 2px;
+}
+#card2{
+    background-color: aqua;
+    padding: 7px;
+    box-shadow: 2px 2px 2px;
+}
+#card3{
+    background-color: aqua;
+    padding: 7px;
+    box-shadow: 2px 2px 2px;
+}
+#heading{
+    background-color: burlywood;
+    padding: 4px;
+    position: relative;
+}
