@@ -5,8 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
-  background: linear-gradient(135deg, #060606ad, #727272);
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,7 +38,6 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  margin: 0em 0.5em;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;

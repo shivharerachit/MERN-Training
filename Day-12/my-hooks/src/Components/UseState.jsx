@@ -1,29 +1,41 @@
-import React,{useState} from "react";
+import React,{useState,  useRef} from "react";
 
+var buttonText = "Change to RED";
 const UseSt = () => {
     const[color,setColor]=useState("NotSet");
     const[bol,setBol]=useState(true);
+    const h1Ref = useRef(null);
+
     const changeRED = () => {
         setColor("RED")
-        document.getElementById("h1").style.color="red"
+        if (h1Ref.current) {
+            h1Ref.current.style.color = "red";
+        }
         setBol(false);
+        buttonText = "Change to BLUE";
     }
 
     const changeBLUE = () => {
         setColor("BLUE")
-        document.getElementById("h1").style.color="BLUE"
+        if (h1Ref.current) {
+            h1Ref.current.style.color = "blue";
+        }
         setBol(true);
+        buttonText = "Change to RED";
     }
     const resetColor=()=>{
         setColor("NotSet");
-        document.getElementById("h1").style.color=""
+
+        if (h1Ref.current) {
+            h1Ref.current.style.color = "";
+        }
     }
 
    
     return(
         <>
-        <h1 id="h1">HELLO IS  {color}</h1>
-        <button onClick={() =>{bol ? changeRED() : changeBLUE()}}>Back to Color</button>
+        <h1 id="h1" ref={h1Ref}>HELLO IS  {color}</h1>
+        <button onClick={() =>{bol ? changeRED() : changeBLUE()}}>{buttonText}</button>
         <button onClick={resetColor}>Reset</button>
         </>
     )
